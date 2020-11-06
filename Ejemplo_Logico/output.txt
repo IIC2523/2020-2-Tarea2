@@ -1,0 +1,71 @@
+Ejecucion 1:
+    Emisor:
+        - Proceso: C0
+        - reloj: 1
+        - mensaje m 
+        - destino: C1
+    Receptor:
+        - Proceso: C1
+        - reloj actual: 0
+        - emisor: C0
+        - nuevo reloj: 2
+
+Ejecucion 2:
+    - Proceso: C0
+    - reloj actual: 1
+    - aumento: 2
+    - reloj: 3
+
+Ejecucion 3:
+    Emisor:
+        - Proceso: C1
+        - reloj: 3
+        - mensaje m 
+        - destino: C0
+    Receptor:
+        - Proceso: C0
+        - reloj actual: 3
+        - emisor: C1
+        - nuevo reloj: 4
+    Emisor:
+        - Proceso: C1
+        - reloj: 3
+        - mensaje m 
+        - destino: C2
+    Receptor:
+        - Proceso: C2
+        - reloj actual: 0
+        - emisor: C1
+        - nuevo reloj: 4
+
+Ejecucion 4:
+    Emisor:
+        - Proceso: C3
+        - reloj: 1
+        - mensaje m 
+        - destino: C4
+    Receptor:
+        - Proceso: C4
+        - reloj actual: 0
+        - emisor: C3
+        - nuevo reloj: 2
+
+Ejecucion 5:
+    Emisor:
+        - Proceso: C4
+        - reloj: 3
+        - mensaje m 
+        - destino: C1
+    Receptor:
+        - Proceso: C1
+        - reloj actual: 3
+        - emisor: C4
+        - nuevo reloj: 4
+
+Relojes finales:
+
+reloj 0: 4
+reloj 1: 4
+reloj 2: 4
+reloj 3: 1
+reloj 4: 3
